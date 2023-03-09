@@ -1,18 +1,105 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
 }
 
 :root {
-    --background-color: #FFFDFA;
-    --primary-color: #00001A;
-    --secondary-color: #5E607A;
-    --accent-color: #F15D51;
-    --number-color: #C5C6CE;
-    --article-color: #E9AA52;
-  }
-  
+	--background-color: #fffdfa;
+	--primary-color: #00001a;
+	--secondary-color: #5e607a;
+	--accent-color: #f15d51;
+	--number-color: #c5c6ce;
+	--article-color: #e9aa52;
+}
+
 body {
-    background-color: var(--background-color);
+	font-size: 15px;
+	font-family: "Lora", serif;
+	background-color: var(--background-color);
+}
+
+/* HEADER */
+header nav {
+	padding: 24px;
+	max-width: 1024px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+header nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+header nav ul li {
+	margin-left: 40px;
+}
+
+header nav ul li a {
+	color: var(--secondary-color);
+	text-decoration: none;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	display: none;
+}
+.mobile-nav-toggle {
+    display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+	header nav ul {
+		z-index: 2;
+		padding: min(30vh, 10rem) 2em;
+		flex-direction: column;
+		align-items: baseline;
+		position: fixed;
+        z-index: 1000;
+		inset: 0 0 0 30%;
+		background: var(--background-color);
+	}
+
+	header nav ul li {
+		font-size: 18px;
+		color: var(--primary-color);
+		margin-bottom: 24px;
+	}
+
+	.overlay {
+		display: block;
+	}
+
+    .mobile-nav-toggle {
+        display: block;
+        background: url("assets/images/icon-menu-close.svg");
+        background-repeat: no-repeat;
+        border: 0;
+        z-index: 9999;
+        position: absolute;
+        width: 2rem;
+        top: 2rem;
+        right: 2rem;
+        aspect-ratio: 1;
+    }
+}
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
 }
