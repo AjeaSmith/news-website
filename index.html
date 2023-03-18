@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>News App</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="flex container">
+			<div class="overlay"></div>
+
+			<img src="./assets/images/logo.svg" alt="" />
+
+			<button
+				class="mobile-nav-toggle"
+				aria-controls="menu"
+				aria-expanded="false"
+			>
+				<span class="sr-only">Menu</span>
+			</button>
+			<nav>
+				<ul role="list" class="fs-nav" data-visible="false" id="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">New</a></li>
+					<li><a href="#">Popular</a></li>
+					<li><a href="#">Trending</a></li>
+					<li><a href="#">Categories</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<div>
+					<div class="container">
+						<div class="row">
+							<section class="col-left col">
+								<div class="hero-img">
+									
+								</div>
+								<div class="col-left__row">
+									<div>
+										<h1
+											class="fs-primary-heading fw-bold text-neutral-400"
+										>
+											The Bright Future of Web 3.0?
+										</h1>
+									</div>
+									<div>
+										<p class="text-neutral-300">
+											We dive into the next evolution of
+											the web that claims to put the power
+											of the platforms back into the hands
+											of the people. But is it really
+											fulfilling its promise?
+										</p>
+										<button
+											class="primary-button fs-button text-neutral-100 bg-accent-red uppercase fw-semi-bold"
+										>
+											Read more
+										</button>
+									</div>
+								</div>
+							</section>
+							<section class="col-right col">
+								<div class="bg-dark">
+									<h2
+										class="fs-secondary-heading fw-semi-bold text-accent-orange"
+									>
+										New
+									</h2>
+									<div class="news-article">
+										<h3
+											class="fw-bold fs-sub-heading text-neutral-100"
+										>
+											Hydrogen VS Electric Cars
+										</h3>
+										<p class="text-neutral-200">
+											Will hydrogen-fueled cars ever catch
+											up to EVs?
+										</p>
+									</div>
+									<div class="news-article">
+										<h3
+											class="fw-bold fs-sub-heading text-neutral-100"
+										>
+											The Downsides of AI Artistry
+										</h3>
+										<p class="text-neutral-200">
+											What are the possible adverse
+											effects of on-demand AI image
+											generation?
+										</p>
+									</div>
+									<div class="last">
+										<h3
+											class="fw-bold fs-sub-heading text-neutral-100"
+										>
+											Is VC Funding Drying Up?
+										</h3>
+										<p class="text-neutral-200">
+											Private funding by VC firms is down
+											50% YOY. We take a look at what that
+											means.
+										</p>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<ul class="numbered-items" role="list">
+						<li>
+							<div class="numbered-img">
+								<img
+									src="assets/images/image-retro-pcs.jpg"
+									alt=""
+								/>
+							</div>
+							<div>
+								<div
+									class="fs-600 text-neutral-200 fw-semi-bold"
+								>
+									01
+								</div>
+								<h3 class="fs-500 fw-bold text-neutral-400">
+									Reviving Retro PCs
+								</h3>
+								<p class="text-neutral-300">
+									What happens when old PCs are given modern
+									upgrades?
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="numbered-img">
+								<img
+									src="assets/images/image-top-laptops.jpg"
+									alt=""
+								/>
+							</div>
+							<div>
+								<div
+									class="fs-600 text-neutral-200 fw-semi-bold"
+								>
+									02
+								</div>
+								<h3 class="fs-500 fw-bold text-neutral-400">
+									Top 10 Laptops of 2022
+								</h3>
+								<p class="text-neutral-300">
+									Our best picks for various needs and
+									budgets.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="numbered-img">
+								<img
+									src="assets/images/image-gaming-growth.jpg"
+									alt="white ps4 controller"
+								/>
+							</div>
+							<div>
+								<div
+									class="fs-600 text-neutral-200 fw-semi-bold"
+								>
+									03
+								</div>
+								<h3 class="fs-500 fw-bold text-neutral-400">
+									The Growth of Gaming
+								</h3>
+								<p class="text-neutral-300">
+									How the pandemic has sparked fresh
+									opportunities.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<script src="main.js"></script>
+	</body>
+</html>
